@@ -1,0 +1,25 @@
+<!Doctype html>
+<html>
+<head id="head" runat="sever">
+    <title>radiobutton</title>
+</head>
+<body>
+    
+    <form runat="server" id="form1">
+
+
+        <asp:Label Id="Label1" runat="server" Text="its label 1 enter your username"></asp:Label>
+        <asp:TextBox id="textbox1" runat="server" CssClass="" ></asp:TextBox>
+
+        <hr>
+
+        <asp:Label Id="Label2" runat="server" Text="its label2 upload your file"></asp:Label>
+        <asp:FileUpload id="file" runat="server" ></asp:FileUpload>
+
+        <asp:Lable id="submit" runat="server" Text="submit"></asp:Lable>
+        <asp:Button id="button1" runat="server" Text="submit text" On_Click="Submit_click">
+    </form>
+    <asp:Label id="userInput" runat="server"></asp:Label>
+</body>
+
+</html>

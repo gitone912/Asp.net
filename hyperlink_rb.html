@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="head" runat="server">
+    <title>hyperlink</title>
+</head>
+<body>
+    <form runat="server" id="form1">
+
+        <asp:HyperLink Id="hp1" runat="server" NavigateUrl="~/about.aspx" Text="Go to about"></asp:HyperLink>
+        <asp:Label id="label1" runat="server" Text="select gender" ></asp:Label>
+        <asp:Radio id="rb1" runat="server" Text="male" GroupName="gender" ></asp:Radio>
+        <asp:Radio id="rb2" runat="server" Text="female" GroupName="gender" ></asp:Radio>
+        <asp:Button id="bt1" runat="server" Text="submit" OnClick="Btn1_Click"></asp:Button>
+
+    </form>
+    <asp:Label id="genderlabel" runat="server" ></asp:Label>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head runat="sever" id="head">
+    <title>Drop down</title>
+</head>
+<body>
+    
+    <form id="form1" runat="server">
+
+        <p>select a city</p>
+        <asp:DropDownList id="ddl1" runat="server" >
+
+        <asp:ListItem value="">select</asp:ListItem>
+        <asp:ListItem >bihar</asp:ListItem>
+        <asp:ListItem>ranchi</asp:ListItem>
+
+        </asp:DropDownList>
+        <asp:Button id="b1" runat=server Text="submit" OnClick="bt1_click"></asp:Button>
+    </form>
+    <asp:Label id="final" runat="server"></asp:Label>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CompareValidatorDemo.aspx.cs" Inherits="CompareValidatorDemo.CompareValidatorDemo" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>CompareValidator Demo</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <h2>CompareValidator Demo</h2>
+            <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" /><br />
+            <asp:TextBox ID="txtConfirmPassword" runat="server" TextMode="Password" /><br />
+            <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" /><br />
+            <asp:Label ID="lblMessage" runat="server" Text="" ForeColor="Red" /><br />
+            <asp:CompareValidator id="cmp1" runat="server" ControlToValidate="txtConfirmPassword" ControlToCompare="txtPassword" Display="dynamic" ErrorMessage="password did not match"></asp:CompareValidator>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery.min.js"></script>
+    <script type="text/javascript"></script>
+    <script>
+        $(document).ready(function(){
+            updateContent();
+            setInterval(updateContent,1000)
+        }
+        )
+        function updateContent(){
+            $.ajax({
+                url:'ajax.aspx',
+                dateType: 'text',
+                success :function(data){
+                    $('#content').html(data)
+                }
+            })
+        }
+    </script>
+</head>
+<body>
+    <form id="form1" runat=server>
+        <h1>Current Time:</h1>
+        <div id="content"></div>
+
+    </form>
+</body>
+</html>
